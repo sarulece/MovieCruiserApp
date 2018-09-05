@@ -1,0 +1,28 @@
+.login-form {
+    min-width: 150px;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  .login-input-full-width {
+    width: 100%;
+    padding: 10px 10px;
+  }
+
+  .login-user {
+    border: 1px solid;
+    width: 600px;
+    margin: 100px auto;
+    padding: 10px 10px;
+  }
+
+  .form-buttons{
+    padding-left: 120px;
+    padding-right: 50px;
+  }
+
+  .form-button{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.5em;
+  }

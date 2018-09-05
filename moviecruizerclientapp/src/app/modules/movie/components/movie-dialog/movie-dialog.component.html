@@ -1,0 +1,12 @@
+<h4 mat-dialog-title>Update Comments</h4>
+<div mat-dialog-content>
+  <p>Movie: {{movie.title}}</p>
+  <p>Comments</p>
+  <mat-form-field>
+    <textarea matInput [(ngModel)]="comments" name="movie-comments-input"></textarea>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button color="primary" (click)="onNoClick()" name="dialog-cancel-button">Cancel</button>
+  <button mat-raised-button color="primary" (click)="onUpdateComments()" name="dialog-update-button">Update</button>
+</div>

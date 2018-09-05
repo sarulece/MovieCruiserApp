@@ -1,0 +1,21 @@
+.movie-card{
+    max-width: 250px;
+    margin: 15px;
+}
+.movie-content{
+    text-align: justify;
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.movie-content::-webkit-scrollbar
+{
+    width: 2px;
+    background: gray;
+}
+.movie-image{
+    height: 250px;
+}
+.movie-actions{
+    text-align: right;
+}

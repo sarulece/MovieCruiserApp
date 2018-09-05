@@ -1,0 +1,19 @@
+<div>
+    <div class="login-user">
+      <h2 style="text-align:center">Login User</h2>
+      <form class="login-form" (ngsubmit)="loginUser()">
+        <mat-form-field class="login-input-full-width">
+          <input matInput placeholder="User Name" [(ngModel)]="user.userName" required  name="userName">
+        </mat-form-field>
+        <mat-form-field class="login-input-full-width">
+          <input type="password" matInput placeholder="Password" [(ngModel)]="user.password" required name="password">
+        </mat-form-field>
+          <div class="form-buttons">
+              <button class="form-button" mat-raised-button color="primary" type="submit" (click)="loginUser()">Login</button>
+              <button class="form-button" mat-raised-button color="primary" [routerLink]="['/register']">Register</button>
+          </div>       
+        </form>
+    </div>
+  </div>
+  
+  

@@ -1,0 +1,25 @@
+<div>
+  <div class="register-user">
+    <h2 style="text-align:center">Register User</h2>
+    <form class="register-form" (ngsubmit)="registerUser()">
+        <mat-form-field class="register-input-full-width">
+          <input matInput placeholder="First Name" [(ngModel)]="user.firstName" name="firstName">
+        </mat-form-field>   
+        <mat-form-field class="register-input-full-width">
+          <input matInput placeholder="Last Name"[(ngModel)]="user.lastName" name="lastName">
+        </mat-form-field>
+        <mat-form-field class="register-input-full-width">
+          <input matInput placeholder="User Name" [(ngModel)]="user.userName" required minlength="5" name="userName">
+        </mat-form-field>
+        <mat-form-field class="register-input-full-width">
+          <input type="password" matInput placeholder="Password" [(ngModel)]="user.password" required minlength="5" name="password">
+        </mat-form-field>
+        <div class="form-buttons">
+            <button class="form-button" mat-raised-button color="primary" type="submit" (click)="registerUser()">Register</button>
+            <button class="form-button" mat-raised-button color="primary" (click)="resetUser()">Clear</button>
+            <button class="form-button" mat-raised-button color="primary" [routerLink]="['/login']">Cancel</button>
+        </div>       
+      </form>
+  </div>
+</div>
+
